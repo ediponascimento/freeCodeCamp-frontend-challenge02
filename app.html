@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ayrton Sena Tribute Page">
+    <meta name="keywords" content="Ayrton Sena, Pilot, Brazilian Pilot, Formula 1">
+    <meta name="author" content="Édipo Nascimento">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300i,400|Source+Sans+Pro:300i,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1 id="title">Genesis Contact</h1>
+            <p id="description">Thank you to takeing the time to help us improve the plataform</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="for" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age</label>(optional)
+                <input type="number" name="age" placeholder="Age" id="number" min="10" max="999" required>
+            </div>
+            <div class="form-group">
+                <p>Witch option best describes your current role?</p>
+                <select id="dropdown" name="role" required>
+                    <option disabled selected value="Select current rule">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend Genesis to a friend or family?</p>
+                <label>
+                    <input type="radio" name="user-recommend" value="definitely" class="inp-radio" checked>
+                    Definitely
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="mayby" class="inp-radio">
+                    Mayby
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="not-sure" class="inp-radio">
+                    Not sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What are your interesting</p>
+                <label>
+                    <input class="form-control" type="checkbox" value="java">
+                    Java
+                </label>
+                <label>
+                    <input class="form-control" type="checkbox" value="php">
+                    PHP
+                </label>
+                <label>
+                    <input class="form-control" type="checkbox" value="javascript">
+                    JavaScript
+                </label>
+                <label>
+                    <input class="form-control" type="checkbox" value="ruby">
+                    Ruby
+                </label>
+                <label>
+                    <input class="form-control" type="checkbox" value="Python">
+                    Python
+                </label>
+                <label>
+                    <input class="form-control" type="checkbox" value="Golang">
+                    Golang
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
