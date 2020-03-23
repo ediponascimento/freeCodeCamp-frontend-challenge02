@@ -30,7 +30,7 @@
                 <input type="email" id="email" placeholder="Enter your Email" required>
             </div>
             <div class="form-group">
-                <label for="age" id="number-label">Age</label>(optional)
+                <label for="age" id="number-label">Age (optional)</label>
                 <input type="number" name="age" placeholder="Age" id="number" min="10" max="999" required>
             </div>
             <div class="form-group">
@@ -47,48 +47,58 @@
             <div class="form-group">
                 <p>Would you recommend Genesis to a friend or family?</p>
                 <label>
-                    <input type="radio" name="user-recommend" value="definitely" class="inp-radio" checked>
+                    <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>
                     Definitely
                 </label>
                 <label>
-                    <input type="radio" name="user-recommend" value="mayby" class="inp-radio">
+                    <input type="radio" name="user-recommend" value="mayby" class="input-radio">
                     Mayby
                 </label>
                 <label>
-                    <input type="radio" name="user-recommend" value="not-sure" class="inp-radio">
+                    <input type="radio" name="user-recommend" value="not-sure" class="input-radio">
                     Not sure
                 </label>
             </div>
             <div class="form-group">
+                <p>What is your favorite feature of Genesis?</p>
+                <select name="favorite-feature" id="" required>
+                    <option disabled selected value="Select an option">select an option</option>
+                    <option value="challengs">Challengs</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="OpenSource">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <p>What are your interesting</p>
                 <label>
-                    <input class="form-control" type="checkbox" value="java">
+                    <input class="input-checkbox" type="checkbox" value="java">
                     Java
                 </label>
                 <label>
-                    <input class="form-control" type="checkbox" value="php">
+                    <input class="input-checkbox" type="checkbox" value="php">
                     PHP
                 </label>
                 <label>
-                    <input class="form-control" type="checkbox" value="javascript">
+                    <input class="input-checkbox" type="checkbox" value="javascript">
                     JavaScript
                 </label>
                 <label>
-                    <input class="form-control" type="checkbox" value="ruby">
+                    <input class="input-checkbox" type="checkbox" value="ruby">
                     Ruby
                 </label>
                 <label>
-                    <input class="form-control" type="checkbox" value="Python">
+                    <input class="input-checkbox" type="checkbox" value="Python">
                     Python
                 </label>
                 <label>
-                    <input class="form-control" type="checkbox" value="Golang">
+                    <input class="input-checkbox" type="checkbox" value="Golang">
                     Golang
                 </label>
             </div>
             <div class="form-group">
                 <p>Any comments or suggestions?</p>
-                <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+                <textarea name="comment" id="input-textarea" placeholder="Enter your comment here"></textarea>
             </div>
             <div class="form-group">
                 <button id="submit">Submit</button>
